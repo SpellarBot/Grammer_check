@@ -10,3 +10,30 @@ The following are given rules.
 5. Two continuous spaces are not allowed.
 6. Two continuous upper case characters are not allowed.
 7. However the sentence can end after an upper case character.
+
+<b>Example input and output</b>
+
+Please enter a sentence to check grammer mistake
+
+<b>welcome to  DEMO for checking grammer mistake</b>
+
+Given sentence is wrong because
+
+First character should start with upper case
+
+Two spaces are not allowed
+
+Two Uppercase characters are not allowed continuously
+
+Sentence should end with full stop
+
+----------------------------------------------------------------
+
+Please enter a sentence to check grammer mistake
+
+<b>Welcome to demo for checking Grammer mistake.</b>
+
+Given sentence is correct, sentence does not have grammer mistake
+
+
+
