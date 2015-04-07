@@ -2,7 +2,7 @@ class GrammerCheck
   
   def validate_sentence(sentence)
     error_display = []
-    sentence      = sentence.strip
+    sentence.strip!
     error_display << check_first_character(sentence)
     error_display << check_double_space(sentence)
     error_display << check_double_upcase(sentence)
@@ -35,21 +35,22 @@ class GrammerCheck
   end
 
   def check_double_upcase(sentence)
-    loop_value = 0
+    loop_value    = 0
+    increment_one = 1
     while loop_value < sentence.length do
       caps_found         = print_index(sentence, loop_value)
       if caps_found
-        increment_by_one = caps_found + 1
+        increment_by_one = caps_found + increment_one
         again_found      = print_index(sentence, increment_by_one)
         if again_found && increment_by_one == again_found
           return 'Two Uppercase characters are not allowed continuously'
         elsif again_found
           loop_value = again_found
         else
-          loop_value = caps_found + 1
+          loop_value = caps_found + increment_one
         end
       else
-        loop_value   = loop_value + 1
+        loop_value   = loop_value + increment_one
       end
     end
   end
