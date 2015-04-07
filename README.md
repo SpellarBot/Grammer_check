@@ -31,7 +31,7 @@ Sentence should end with full stop
 
 Please enter a sentence to check grammer mistake
 
-<b>Welcome to demo for checking Grammer mistake.</b>
+<b>Welcome to demo for checking Grammer mistakE.</b>
 
 Given sentence is correct, sentence does not have grammer mistake
 
