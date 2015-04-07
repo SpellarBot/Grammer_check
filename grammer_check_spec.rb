@@ -35,16 +35,16 @@ describe 'Grammmer Check' do
     let(:class_instance) { GrammerCheck.new }
 
     it 'should start with a Uppercase character' do
-      expect(class_instance.check_first_character(test_sentence)).to eq('first character should start with upper case')
+      expect(class_instance.check_first_character(test_sentence)).to eq('First character should start with upper case')
     end
     it 'should be one space between the words' do
-      expect(class_instance.check_double_space(test_sentence)).to eq('two spaces are not allowed')
+      expect(class_instance.check_double_space(test_sentence)).to eq('Two spaces are not allowed')
     end
     it 'sentence must end with a full stop(.)' do
-      expect(class_instance.check_full_stop(test_sentence)).to eq('sentence should end with full stop')
+      expect(class_instance.check_full_stop(test_sentence)).to eq('Sentence should end with full stop')
     end
     it 'Two continuous upper case characters are not allowed' do
-      expect(class_instance.check_double_upcase(test_sentence)).to eq('two Uppercase characters are not allowed continuously')
+      expect(class_instance.check_double_upcase(test_sentence)).to eq('Two Uppercase characters are not allowed continuously')
     end
   end
 
